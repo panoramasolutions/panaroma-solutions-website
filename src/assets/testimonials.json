@@ -1,0 +1,20 @@
+[
+    {
+        "review": "Panorama transformed our water treatment operations with a clean, easy-to-use digital application, significantly improving efficiency and reporting accuracy.",
+        "company": "Management Team, Pure N Cure",
+        "avatar": "dev1",
+        "stars": 4
+    },
+    {
+        "review": "From Frappe HRMS to the Samwadini platform, Panorama delivered systems that improved coordination, transparency, and overall operational effectiveness.",
+        "company": "Leadership Team, AAS – NGO",
+        "avatar": "dev2",
+        "stars": 5
+    },
+    {
+        "review": "Panorama automated our critical manual processes using AI and OCR, drastically reducing processing time, errors, and operational workload.",
+        "company": "Operations Head, Rane Management",
+        "avatar": "dev3",
+        "stars": 4
+    }
+]

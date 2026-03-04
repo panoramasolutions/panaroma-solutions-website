@@ -1,0 +1,93 @@
+[
+    {
+    "title": "AI Event Photo Delivery Solution",
+    "image": "solution6.png",
+    "description": {
+        "short": "At large events, guests often wait days or weeks to receive their professional photos. We built a real-time AI-powered system that identifies guests from event photos and delivers their images instantly via WhatsApp.",
+        "full": "At weddings, corporate events, and large gatherings, professional photographers capture thousands of DSLR images, but guests typically receive their photos only after long delays. Searching manually through galleries is time-consuming and frustrating. <br/>We designed a real-time AI-based photo delivery platform that connects photographers, cloud storage, and guests into a seamless digital pipeline. <br/><br/>As photographers capture images, they upload them instantly to the cloud. On the other side, guests interact with our automated WhatsApp bot, which guides them through a simple process to upload a selfie. <br/><br/>The system then performs intelligent face recognition matching by scanning the entire event image database and identifying all photos containing that guest. <br/><br/>Once matched, the platform automatically sends the guest their professional photos directly on WhatsApp within minutes. <br/><br/>This solution removes manual sorting, eliminates delays, and transforms event photography into a real-time, personalized digital experience."
+    },
+    "solution": {
+        "short": "We created an AI-powered real-time image distribution platform that automatically matches guests with their photos and delivers them instantly through WhatsApp.",
+        "full": "Our solution introduced a complete real-time event photo management and delivery ecosystem, including: <ul><li>Instant cloud upload pipeline for DSLR images captured at events</li><li>Automated WhatsApp bot for guest interaction and onboarding</li><li>Secure selfie capture workflow for identity matching</li><li>AI-driven face recognition engine scanning large photo datasets</li><li>Automated retrieval of all guest-matching photos</li><li>Instant WhatsApp-based delivery of professional images</li><li>Scalable architecture capable of handling thousands of images and users simultaneously</li></ul><br/>This system eliminated: <ul><li>Manual photo tagging and sorting</li><li>Delayed post-event image distribution</li><li>Guest frustration from searching large galleries</li></ul>And introduced: <ul><li>Real-time personalized photo delivery</li><li>Premium guest experience</li><li>Automation for event organizers</li><li>New monetization opportunities for event companies</li></ul>"
+    },
+    "client_type": "Event Management | Weddings & Celebrations | Corporate Events",
+    "alignment": "right",
+    "tagline": "From camera click to guest delivery — professional event photos, matched and delivered instantly."
+},
+
+    {
+        "title": "Intelligent Filter Projection & Report System",
+        "image": "solution1.png",
+        "description": {
+            "short": "Designing a perfect water purification system usually takes weeks of calculations, assumptions, and trial runs. We transformed this entire engineering process into a smart, visual, real-time simulation engine inside a single application.",
+            "full": "We developed a custom Flutter (Dart) based engineering application for our client PNC, focused on the complete digital design and simulation of water purification systems. Traditionally, designing RO, UV, and advanced filtration systems requires intensive manual calculations, chemical balancing, and repeated physical prototyping. <br/>This application allows users to input raw water inflow parameters such as: <ul><li>TDS levels</li><li>Chemical composition</li><li>Flow rate</li><li>Pressure and impurities</li></ul> Users can then customize the entire filtration chain by selecting and configuring multiple stages such as: <ul><li>RO (Reverse Osmosis)</li><li>UV (Ultraviolet)</li><li>And additional filtration units</li></ul> The application is entirely logic-driven and formula-based, built using real-world chemical engineering and water treatment formulas used globally, ensuring accurate, predictable, and verifiable outputs without any AI dependency. Based on these calculations, it precisely computes: <ul><li>Treated water output</li><li>Recovery percentage</li><li>Reject flow</li><li>Quality improvement at each stage</li></ul> Finally, the application automatically generates a complete visual architecture diagram of the designed water purification system - giving engineers a crystal-clear blueprint before actual hardware execution."
+        },
+        "solution": {
+            "short": "We built a powerful digital design engine for water purification systems-where engineers can design, calculate, simulate, and visualize the complete treatment flow before physical implementation.",
+            "full": "Our solution delivered a fully interactive water purification design and simulation platform, featuring: <ul><li>User-driven inflow water parameter input</li><li>Modular filter selection and customization (RO, UV, and multi-stage units)</li><li>Embedded global-standard chemical and fluid dynamics formulas</li><li>Deterministic output based purely on engineering calculations</li><li>Real-time calculation of: <ul><li>Permeate flow</li><li>Reject flow</li><li>TDS reduction</li><li>Chemical balancing</li></ul></li><li>Auto-generation of complete water treatment plant architecture diagrams</li><li>End-to-end visual + mathematical validation before real-world execution</li></ul><br/>This system eliminated: <ul><li>Manual design errors</li><li>Spreadsheet-based trial-and-error</li><li>Costly physical prototyping failures</li></ul>And introduced: <ul><li>Digital-first plant design</li><li>Precision engineering</li><li>Faster project approvals</li><li>Accurate cost and output prediction</li></ul>"
+        },
+        "client_type": "Water Treatment Industry | Industrial Engineering",
+        "alignment": "left",
+        "tagline": "Design, calculate, and visualize complete water treatment systems with engineering precision."
+    },
+    {
+        "title": "NGO Operations & Program Management Platform",
+        "image": "solution2.png",
+        "description": {
+            "short": "Managing large-scale NGO programs, donors, staff, students, and social cases manually leads to chaos, delays, and missed impact. We transformed this entire ecosystem into a structured, transparent, and digitally governed platform.",
+            "full": "We implemented a complete digital operations platform for the NGO AAS, an organization funded by globally respected philanthropists and institutions such as Wipro and Kailash Satyarthi. The NGO runs multiple large-scale social initiatives, including: <ul><li>Student education and skill development programs (similar to NIIT-style learning)</li><li>Women safety, counseling, and domestic violence support systems</li><li>Field worker operations and intervention tracking</li><li>Donor-backed governance, reporting, and monitoring</li></ul> To manage all of this, we implemented Frappe HRMS to digitize: <ul><li>Staff onboarding, attendance, and payroll</li><li>Program-wise workforce allocation</li><li>Performance tracking and audits</li></ul> In parallel, we built a custom low-budget application inside Frappe for their flagship social initiative named Samwadini, which handles: <ul><li>Student education tracking</li><li>Women safety reporting</li><li>ICase escalation and intervention workflows</li><li>Action tracking by NGO staff</li></ul><br/>This transformed multiple independent social operations into a single, secure, centralized digital ecosystem."
+        },
+        "solution": {
+            "short": "We digitized the NGO's entire workforce, education programs, and women support systems into one real-time, centralized, and secure operational platform.",
+            "full": "Our solution delivered a two-layer digital system: <ol><li><b>NGO HR & Operations Platform (Frappe HRMS):</b> <ul><li>Staff and volunteer onboarding</li><li>Attendance, Payroll & Role management</li><li>Program-wise workforce allocation</li><li>Performance tracking and audits</li></ul></li><li><b>Custom Social Program Platform - Samwadini (Built Inside Frappe):</b> <ul><li>Student learning program management</li><li>Course tracking (NIIT-style education support)</li><li>Women safety & domestic violence reporting</li><li>Incident escalation workflows</li><li>NGO action tracking and intervention history</li><li>Secure case documentation</li></ul>This platform ensured: <ul><li>Full transparency</li><li>Legal traceability</li><li>Centralized data governance</li><li>Low infrastructure cost</li><li>High social impact scalability</li></ul></li></ol>"
+        },
+        "client_type": "Non-Governmental Organization (NGO)| Education & Women Safety",
+        "alignment": "right",
+        "tagline": "Digitally empowering social change through structured systems and transparent operations."
+    },
+    {
+        "title": "AI-Based Law Assist System",
+        "image": "solution3.png",
+        "description": {
+            "short": "In real-world police operations, applying the correct legal sections during an incident can change the entire outcome of a case. We built a system that instantly bridges the gap between raw incidents and precise legal interpretation.",
+            "full": "We developed an AI-based Law Assist system to solve one of the most critical challenges in law enforcement—accurate application of legal sections during real world incidents. Traditionally, when an incident is reported, officers apply sections based on personal knowledge and experience. This can sometimes lead to: <ul><li>Incorrect legal sections</li><li>Weak FIR framing</li><li>Legal loopholes</li><li>Delays in justice</li></ul> To solve this, we built a conversational AI-powered legal assistant where: <ul><li>A police officer enters the incident in natural language</li><li>The system asks follow-up questions</li><li>Based on the complete context, it suggests:<ul><li>Applicable laws and IPC sections</li><li>Confidence scores (High, Medium, or Low probability match)</li></ul></li></ul> Additionally, the system fully supports the Hindi language, making it highly usable for on-ground staff and regional users. <br/>This transforms raw incident reporting into accurate, structured, and legally validated action."
+        },
+        "solution": {
+            "short": "We built an AI-powered legal intelligence engine that converts incident descriptions into structured, confidence-graded legal sections—in both English and Hindi.",
+            "full": "Our solution delivers a smart, conversational Law Assist platform with: <ul><li>Natural language incident input</li><li>Intelligent follow-up questioning</li><li>Automated mapping to: <ul><li>IPC Sections</li><li>Criminal laws</li><li>Relevant legal acts</li></ul></li><li>Confidence scoring: <ul><li>High Probability Match</li><li>Medium Probability Match</li><li>Low Probability Match</li></ul></li><li>Full Hindi language support</li><li>User-friendly chatbot interface</li>Designed for: <ul><li>Police officers</li><li>Legal assistants</li><li>Investigation support teams</li></ul></ul><ul>This system: <ul><li>Reduces dependency on individual legal expertise</li><li>Improves legal accuracy</li><li>Strengthens FIR quality</li><li>Enhances investigation foundations</li></ul>"
+        },
+        "client_type": "Law Enforcement | Government | Police & Public Safety",
+        "alignment": "left",
+        "tagline": "Turning incidents into accurate legal action—instantly, intelligently, and in Hindi."
+    },
+    {
+        "title": "QGIS Property Buy & Sell Marketplace",
+        "image": "solution4.png",
+        "description": {
+            "short": "Buying land is high-value, high-risk—and full of hidden legal traps. We built a platform that brings transparency, verification, and trust into every land transaction.",
+            "full": "We built a dedicated land-focused property buy & sell marketplace exclusively specialized for land transactions.<br/> Unlike general property platforms that mix flats, rentals, and land listings, this platform is engineered purely for: <ul><li>Residential land</li><li>Commercial plots</li><li>Agricultural land</li><li>Investment plots</li></ul> One of the biggest problems in land transactions is uncertain ownership, forged documents, and legal risk. To solve this, we introduced a dual-listing model: <ul><li>Verified Land Listings</li><li>Non-Verified Land Listings</li></ul>For verified lands, a complete legal and on-ground verification process is carried out, including: <ul><li>Ownership document checks</li><li>Land record validation</li><li>Encumbrance checks</li><li>On-site verification</li><li>Final verification report generation</li></ul>Only after successful verification is the land marked as Verified on the platform with its digital verification report attached, giving buyers unmatched confidence before making high-value decisions."
+        },
+        "solution": {
+            "short": "We created a land-only digital marketplace with built-in verification, reporting, and end-to-end transaction support services.",
+            "full": "Our solution delivers a complete land transaction ecosystem, including: <ul><li>Land-only buy & sell marketplace</li><li>Verified vs Non-Verified land classification</li><li>End-to-end land & document verification workflow</li><li>Automated verification report generation</li><li>Land listing management for sellers</li><li>Buyer search, filtering & discovery</li><li>Integrated land-related services, such as: <ul><li>Legal assistance</li><li>Documentation support</li><li>Registration guidance</li><li>Due diligence services</li></ul></ul>This platform transforms land buying from a risk-driven process into a trust-driven digital experience."
+        },
+        "client_type": "Real Estate | Land Developers",
+        "alignment": "right",
+        "tagline": "Where verified land meets confident buyers."
+    },
+    {
+        "title": "Custom Website Design & Development Solutions",
+        "image": "solution5.png",
+        "description": {
+            "short": "A website is often the first impression of a business—but most fail to convert. We engineered a complete design-to-deployment system to ensure every website is not just beautiful, but strategic, fast, and conversion-ready.",
+            "full": "We have delivered custom-built websites for multiple clients across different segments, with a major focus on the consultancy industry, while not being limited to it. <br/>Our approach covers the entire website lifecycle, starting from: <ul><li>Business understanding</li><li>UI/UX strategy</li><li>Visual design in Figma</li><li>Full-stack development</li><li>Functional & performance testing</li><li>Final deployment & go-live support</li></ul> Depending on the client’s budget and timeline, we offer: <ul><li>Fully custom websites designed from scratch in Figma</li><li>Template-based websites customized for quick launches</li></ul> Every website we deliver is designed to be: <ul><li>Fast-loading</li><li>Mobile responsive</li><li>SEO-ready</li><li>Secure</li><li>Conversion-focused</li></ul>This ensures our clients don’t just get a website—they get a digital business asset."
+        },
+        "solution": {
+            "short": "We deliver complete website solutions—custom or template-based—covering design, development, testing, and launch under one roof.",
+            "full": "Our website development solution includes: <ul><li><b>UI/UX Design in Figma:</b><ul><li>Wireframes</li><li>High-fidelity designs</li><li>Brand-aligned layouts</li></ul></li><li><b>Custom Website Development:</b><ul><li>Frontend & backend development</li><li>Responsive design</li><li>Performance optimization</li></ul></li><li><b>Template-Based Website Deployment:</b><ul><li>Rapid setup</li><li>Visual customization</li></ul></li><li><b>Testing & Quality Assurance:</b><ul><li>Cross-browser</li><li>Mobile responsiveness</li><li>Performance validation</li></ul></li><li><b>Deployment & Go-Live Support:</b><ul><li>Hosting</li><li>SSL</li><li>Security setup</li></li><li>Production monitoring</li></ul></ul>This enables clients to launch their digital presence with speed, stability, and scalability."
+        },
+        "client_type": "Startups|Service Providers |Multi-Industry Businesses",
+        "alignment": "left",
+        "tagline": "From concept to conversion—crafted websites built for real business impact."
+    }
+]

@@ -1,0 +1,55 @@
+{
+    "document_title": "Frequently Asked Questions",
+    "faqs": [
+        {
+            "id": 1,
+            "question": "1. What exactly does Panorama Solutions do?",
+            "answer": "Panorama Solutions is a full-cycle technology consulting & product engineering firm.<br/>We handle everything - from idea validation and system design to development, deployment, scaling, and long-term support.<br/>Our services include:<ul><li>Custom Software Development</li><li>Al & Automation Systems</li><li>Web & Mobile Applications</li><li>SaaS Platforms</li><li>Data & Process Digitization</li><li>Enterprise & Government Solutions</li><li>Ongoing Support & AMC</li></ul>We don't just build software - we build working business systems."
+        },
+        {
+            "id": 2,
+            "question": "2. What is your \"Free POC\" and why do you offer it?",
+            "answer": "Our Free Proof of Concept (POC) is a risk-free way for clients to validate their idea before making any commitment.<br/><br/>Our approach:<br/></br><b>Discuss → Build → Decide</b><br/><ul><li><b>Discuss (30-60 min):</b> Deep problem & use-case understanding</li><li><b>Build:</b> Our team builds a working POC</li><li><b>Decide:</b> Continue, pivot, or drop → no obligation</li></ul><br/>We invest our effort first because we're confident in our engineering and problem-solving ability. <br/><br/>Several of our real platforms - including Al Law Assist, Land Marketplace, and NGO Systems - began as Free POCs."
+        },
+        {
+            "id": 3,
+            "question": "3. What type of projects do you specialize in?",
+            "answer": "We specialize in complex, high-impact systems, including:<ul><li>Al-powered platforms (Law Assist, image recognition, automation)</li><li>Engineering & simulation software (Water purification design systems)</li><li>Government & NGO platforms (HRMS, case management, social programs)</li><li>Marketplaces & transaction platforms (land verification & trading)</li><li>Enterprise websites & SaaS products</li></ul>Our portfolio includes real, large-scale production systems across law enforcement, NGOs, manufacturing, real estate, and government sectors."
+        },
+        {
+            "id": 4,
+            "question": "4. Do you only do development, or also planning and design?",
+            "answer": "We handle the entire lifecycle:<ul><li>Business & technical consulting</li><li>Problem framing & system architecture</li><li>UI/UX design (Figma)</li><li>Full-stack development (Web, Mobile, Al)</li><li>Testing & deployment</li><li>Infrastructure & scaling</li><li>Long-term support, maintenance & AMC</li></ul>Clients get one accountable technical partner instead of multiple vendors."
+        },
+        {
+            "id": 5,
+            "question": "5. How are you different from typical IT companies or freelancers?",
+            "answer": "<b>Most vendors:</b><ul><li>Start coding immediately</li><li>Sell fixed packages</li><li>Disappear after delivery</li></ul><b>We:</b><ul><li>Start with problem understanding</li><li>Validate ideas with Free POC</li><li>Design real business systems, not just apps</li><li>Deliver production-ready engineering</li><li>Offer long-term partnership & support</li></ul>We operate as your technology co-founder, not just a service provider."
+        },
+        {
+            "id": 6,
+            "question": "6. Do you work with startups, enterprises, or government clients?",
+            "answer": "All of them.<br/>Our clients include:<ul><li>Startups & founders</li><li>SMEs & large enterprises</li><li>NGOs & international institutions</li><li>Law enforcement & government bodies</li></ul>We tailor our approach to each organization's scale, compliance needs, and budget."
+        },
+        {
+            "id": 7,
+            "question": "7. How long does a typical project take?",
+            "answer": "It depends on complexity, but typically:<ul><li>POC: 1-4 weeks</li><li>MVP/Core System: 6-12 weeks</li><li>Enterprise Platform: 3-6+ months</li></ul>We work in structured phases with clear milestones and approvals."
+        },
+        {
+            "id": 8,
+            "question": "8. Do you provide ongoing support after project delivery?",
+            "answer": "Yes.<br/>We offer structured Support & AMC plans that include:<ul><li>System monitoring</li><li>Bug fixes & improvements</li><li>Feature enhancements</li><li>Security & performance upgrades</li><li>Technical consulting</li></ul>Your system continues evolving with your business."
+        },
+        {
+            "id": 9,
+            "question": "9. Can you modernize or rebuild existing systems?",
+            "answer": "Absolutely.<br/>We frequently:<ul><li>Re-engineer legacy systems</li><li>Migrate desktop systems to web & mobile</li><li>Improve performance & scalability</li><li>Add Al & automation layers</li><li>Redesign UI/UX for better conversion</li></ul>"
+        },
+        {
+            "id": 10,
+            "question": "10. How do we start working with you?",
+            "answer": "Simple:<ul><li>1. Book a discussion</li><li>2. Get your Free POC</li><li>3. Decide your roadmap</li></ul>No pressure. No risk.<br/>Only clear engineering and honest advice."
+        }
+    ]
+}
