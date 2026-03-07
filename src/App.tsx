@@ -8,6 +8,16 @@ import NotFound from "./pages/NotFound";
 import Solutions from "./pages/Solutions";
 import SplashScreen from "./components/SplashScreen";
 
+declare global {
+  interface ImportMetaEnv {
+    readonly BASE_URL: string;
+  }
+
+  interface ImportMeta {
+    readonly env: ImportMetaEnv;
+  }
+}
+
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -19,7 +29,7 @@ const App = () => {
         {isLoading ? (
           <SplashScreen key="splash" onComplete={() => setIsLoading(false)} />
         ) : (
-          <BrowserRouter key="main">
+          <BrowserRouter basename={import.meta.env.BASE_URL} key="main">
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/solutions" element={<Solutions />} />
