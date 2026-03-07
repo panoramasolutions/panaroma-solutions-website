@@ -54,6 +54,10 @@ export default function Header() {
     { href: "#contact", label: "Contact us" },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm">
       <div className="container-fluid mx-auto px-4 md:px-6">
@@ -120,7 +124,11 @@ export default function Header() {
             }
           `}</style>
 
-          <Link to="/solutions" className="group relative hidden md:flex items-center justify-center w-auto px-5 h-11 rounded-32 bg-gradient-to-b from-white/24 via-black/49 to-white/49 shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] text-white font-bold text-[15px] hover:bg-[#06303E] cursor-pointer overflow-hidden">
+          <Link
+            to="/solutions"
+            onClick={scrollToTop}
+            className="group relative hidden md:flex items-center justify-center w-auto px-5 h-11 rounded-32 bg-gradient-to-b from-white/24 via-black/49 to-white/49 shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] text-white font-bold text-[15px] hover:bg-[#06303E] cursor-pointer overflow-hidden"
+          >
             <span className="relative z-10 whitespace-nowrap">Explore solutions</span>
             <div className="animated-border-box"></div>
           </Link>
@@ -157,7 +165,10 @@ export default function Header() {
                   ))}
                   <Link
                     to="/solutions"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      scrollToTop();
+                    }}
                     className="mt-4 flex items-center justify-center w-full max-w-[280px] h-12 rounded-32 bg-gradient-to-b from-white/24 via-black/49 to-white/49 shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] text-white font-bold text-lg transition-opacity hover:bg-none hover:bg-[#06303E] hover:border-white hover:border-[1px] cursor-pointer"
                   >
                     Explore Solutions
