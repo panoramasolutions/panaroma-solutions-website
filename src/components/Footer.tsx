@@ -121,7 +121,7 @@ export default function Footer() {
 
               {/* Copyright */}
               <p className="text-white/60 text-sm">
-                © Copyright Panorama Solutions LLP. All Rights Reserved
+                © Copyright Panorama Solutions LLP. All Rights Reserved GP
               </p>
             </div>
           </div>
