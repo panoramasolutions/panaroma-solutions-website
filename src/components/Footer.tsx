@@ -65,7 +65,7 @@ export default function Footer() {
               <h3 className="text-[#FF9F66] text-lg font-medium">Call Direct</h3>
             </div>
             <p className="text-sm pl-1">
-              +91 8999988797 / 8422000148
+              +91 8999988797 
             </p>
           </div>
 
