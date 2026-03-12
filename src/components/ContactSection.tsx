@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Footer from "./Footer";
-import contactBG from '../assets/contactBG.svg';
+import contactBG from '../assets/contactBG.webp';
 
 interface ContactFormData {
   fullName: string;

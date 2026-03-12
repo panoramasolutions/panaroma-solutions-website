@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronDown } from 'lucide-react';
-import discoverImage from '../assets/disoverImage.png';
+import discoverImage from '../assets/disoverImage.webp';
 import discussBg from '../assets/discussBg.jpg';
 
 const GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbwkNRw7YHPRK33_4gq5ZvNnYUEZ8NB2apUXUYTEHfa3NKRCAuNOZG2LL6VYZTltqBM0ow/exec';
