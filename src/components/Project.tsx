@@ -1,3 +1,7 @@
+
+
+
+
 import { motion, useInView, animate } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -10,7 +14,9 @@ interface ProjectDetails {
     clientType: string,
     results: {
         deliveries: string,
-        testimonials: string
+        testimonials: string,
+        deliveriesCount: Number,
+         testimonialsCount:Number
     },
     img: string,
     sources?: {
@@ -252,12 +258,32 @@ export default function Project({ details, setModalData }: { details: ProjectDet
 
                     {/* Results Card */}
                     <motion.div
-                        className={`bg-para-heading-color rounded-2xl p-4 md:px-4 md:py-3 lg:px-6 lg:py-3
-                    ${details.alignment === 'right'
-                                ? 'lg:rounded-l-2xl lg:rounded-r-none'
-                                : 'lg:rounded-l-none lg:rounded-r-2xl'
-                            }`}
-                        variants={getBoxVariants(contentGrowDirection)}
+                     onClick={() =>
+    openModal(
+      "Results",
+      "",
+      `
+      <p>${details.title}</p>
+      <ul>
+        <li>✔ ${details.results.deliveries}</li>
+        <li>✔ ${details.results.testimonials}</li>
+       
+      </ul>
+      `
+    )
+  }
+  className={`bg-para-heading-color rounded-2xl p-4 md:px-4 md:py-3 lg:px-6 lg:py-3 cursor-pointer transition
+  ${details.alignment === 'right'
+    ? 'lg:rounded-l-2xl lg:rounded-r-none'
+    : 'lg:rounded-l-none lg:rounded-r-2xl'
+  }`}
+  variants={getBoxVariants(contentGrowDirection)}
+                    //     className={`bg-para-heading-color rounded-2xl p-4 md:px-4 md:py-3 lg:px-6 lg:py-3
+                    // ${details.alignment === 'right'
+                    //             ? 'lg:rounded-l-2xl lg:rounded-r-none'
+                    //             : 'lg:rounded-l-none lg:rounded-r-2xl'
+                    //         }`}
+                    //     variants={getBoxVariants(contentGrowDirection)}
                     >
                         <motion.div variants={contentVariants}>
                             <h3 className="text-sm md:text-base lg:text-lg font-bold text-white tracking-[0.05em]">
@@ -266,7 +292,7 @@ export default function Project({ details, setModalData }: { details: ProjectDet
                             <div className="grid grid-cols-2 gap-4 md:gap-6">
                                 <div>
                                     <p className="text-2xl md:text-3xl font-bold text-white tracking-[0.05em] leading-tight">
-                                        <Counter value={details.results.deliveries} />
+                                        <Counter value={details.results.deliveriesCount.toString()} />+
                                     </p>
                                     <p className="text-xs md:text-sm font-bold text-secondary-gray-color tracking-[0.05em]">
                                         Deliveries
@@ -274,7 +300,7 @@ export default function Project({ details, setModalData }: { details: ProjectDet
                                 </div>
                                 <div>
                                     <p className="text-2xl md:text-3xl font-bold text-white tracking-[0.05em] leading-tight">
-                                        <Counter value={details.results.testimonials} />
+                                        <Counter value={details.results.testimonialsCount.toString()} />+
                                     </p>
                                     <p className="text-xs md:text-sm font-bold text-secondary-gray-color tracking-[0.05em]">
                                         Testimonials
@@ -288,3 +314,11 @@ export default function Project({ details, setModalData }: { details: ProjectDet
         </div>
     );
 }
+
+
+
+
+
+
+
+
