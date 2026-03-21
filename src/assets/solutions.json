@@ -1,3 +1,4 @@
+
 [
     {
     "title": "AI Event Photo Delivery Solution",
@@ -12,7 +13,12 @@
     },
     "client_type": "Event Management | Weddings & Celebrations | Corporate Events",
     "alignment": "right",
-    "tagline": "From camera click to guest delivery — professional event photos, matched and delivered instantly."
+    "tagline": "From camera click to guest delivery — professional event photos, matched and delivered instantly.",
+   "results": {
+    "deliveries": "50,000+ Photos Processed",
+    "testimonials": "300+ Guests Received Instant Photo Delivery"
+}
+
 },
 
     {
@@ -28,7 +34,11 @@
         },
         "client_type": "Water Treatment Industry | Industrial Engineering",
         "alignment": "left",
-        "tagline": "Design, calculate, and visualize complete water treatment systems with engineering precision."
+        "tagline": "Design, calculate, and visualize complete water treatment systems with engineering precision.",
+       "results": {
+    "deliveries": "100+ System Simulations Generated",
+    "testimonials": "25+ Engineering Design Iterations Validated"
+}
     },
     {
         "title": "NGO Operations & Program Management Platform",
@@ -43,7 +53,12 @@
         },
         "client_type": "Non-Governmental Organization (NGO)| Education & Women Safety",
         "alignment": "right",
-        "tagline": "Digitally empowering social change through structured systems and transparent operations."
+        "tagline": "Digitally empowering social change through structured systems and transparent operations.",
+        "results": {
+    "deliveries": "1,000+ Program Records Digitized",
+    "testimonials": "200+ Cases & Student Activities Managed Digitally"
+}
+
     },
     {
         "title": "AI-Based Law Assist System",
@@ -58,7 +73,11 @@
         },
         "client_type": "Law Enforcement | Government | Police & Public Safety",
         "alignment": "left",
-        "tagline": "Turning incidents into accurate legal action—instantly, intelligently, and in Hindi."
+        "tagline": "Turning incidents into accurate legal action—instantly, intelligently, and in Hindi.",
+        "results": {
+    "deliveries": "500+ Incident Scenarios Analyzed",
+    "testimonials": "100+ Legal Section Recommendations Generated"
+}
     },
     {
         "title": "QGIS Property Buy & Sell Marketplace",
@@ -73,7 +92,11 @@
         },
         "client_type": "Real Estate | Land Developers",
         "alignment": "right",
-        "tagline": "Where verified land meets confident buyers."
+        "tagline": "Where verified land meets confident buyers.",
+        "results": {
+    "deliveries": "500+ Land Parcels Structured for Digital Listing",
+    "testimonials": "50+ Property Verification Workflows Initiated"
+}
     },
     {
         "title": "Custom Website Design & Development Solutions",
@@ -88,6 +111,10 @@
         },
         "client_type": "Startups|Service Providers |Multi-Industry Businesses",
         "alignment": "left",
-        "tagline": "From concept to conversion—crafted websites built for real business impact."
+        "tagline": "From concept to conversion—crafted websites built for real business impact.",
+        "results": {
+    "deliveries": "15+ Business Websites Delivered",
+    "testimonials": "10+ Industries Served"
+}
     }
 ]

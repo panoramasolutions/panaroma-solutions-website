@@ -1,4 +1,4 @@
-import Project from '@/components/Project';
+import Project from '../components/Project'; // adjust if needed
 import solution1Png from '../assets/solutions/solution1.png';
 import solution1Webp from '../assets/solutions/solution1.webp';
 import solution1Avif from '../assets/solutions/solution1.avif';
@@ -18,12 +18,13 @@ import solution6Png from '../assets/solutions/solution6.png';
 import solution6Webp from '../assets/solutions/solution6.webp';
 import solution6Avif from '../assets/solutions/solution6.avif';
 import logo from '../assets/logo.svg';
-// import AnimatedHeading from '@/components/AnimatedHeading';
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import solutionsData from '../assets/solutions.json';
 
 
+// ✅ Image Map
 const imageMap: Record<string, { png: string; webp?: string; avif?: string }> = {
   'solution1.png': { png: solution1Png, webp: solution1Webp, avif: solution1Avif },
   'solution2.png': { png: solution2Png, webp: solution2Webp, avif: solution2Avif },
@@ -34,6 +35,7 @@ const imageMap: Record<string, { png: string; webp?: string; avif?: string }> = 
 };
 
 
+// ✅ Modal Props
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -42,7 +44,8 @@ interface ModalProps {
   content: string;
 }
 
-// Modal Component
+
+// ✅ Modal Component
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, heading, subheading, content }) => {
   if (!isOpen) return null;
 
@@ -57,22 +60,21 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, heading, subheading, con
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors cursor-pointer"
+          className="absolute top-4 right-4 text-white hover:text-gray-300 cursor-pointer"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M18 6L6 18M6 6l12 12" />
-          </svg>
+          ✕
         </button>
 
-        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-[0.07em] mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
           {heading}
         </h2>
-        <h3 className="font-bold text-white tracking-[0.07em] mb-6">
+
+        <h3 className="text-white font-semibold mb-4">
           {subheading}
         </h3>
 
         <div
-          className="text-sm md:text-base font-light text-white leading-relaxed tracking-[0.07em] modal-content"
+          className="text-sm md:text-base text-white leading-relaxed"
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </div>
@@ -81,78 +83,107 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, heading, subheading, con
 };
 
 
+// ✅ MAIN COMPONENT
 export default function Solutions() {
-  // Resolve image per solution from data; fallback to solution1 if missing.
-  const Projects = solutionsData.map((item, index) => {
+
+  const Projects = solutionsData.map((item: any, index: number) => {
     const assets = imageMap[item.image] ?? imageMap['solution1.png'];
 
     return {
-    title: item.title,
-    description: item.description.short,
-    fullDescription: item.description.full,
-    solution: item.solution.short,
-    fullSolution: item.solution.full,
-    clientType: item.client_type,
-    results: {
-      deliveries: '5+',
-      testimonials: '48'
-    },
-    // Prefer modern formats; PNG only acts as a legacy fallback.
-    img: assets.avif ?? assets.webp ?? assets.png,
-    sources: {
-      avif: assets.avif,
-      webp: assets.webp,
-    },
-    alignment: item.alignment,
-    tagline: item.tagline,
-    priority: index === 0
+      title: item.title,
+      description: item.description.short,
+      fullDescription: item.description.full,
+      solution: item.solution.short,
+      fullSolution: item.solution.full,
+      clientType: item.client_type,
+
+      results: {
+        deliveries: item.results.deliveries,
+        testimonials: item.results.testimonials,
+
+        deliveriesCount: Number(item.results.deliveries.replace(/\D/g, "")),
+        testimonialsCount: Number(item.results.testimonials.replace(/\D/g, "")),
+      },
+
+      img: assets.avif ?? assets.webp ?? assets.png,
+
+      sources: {
+        avif: assets.avif,
+        webp: assets.webp,
+      },
+
+      alignment: item.alignment,
+      tagline: item.tagline,
+      priority: index === 0,
     };
   });
 
-  const [modalData, setModalData] = useState({ isOpen: false, heading: '', subheading: '', content: '' });
+
+  const [modalData, setModalData] = useState<{
+    isOpen: boolean;
+    heading: string;
+    subheading: string;
+    content: string;
+  }>({
+    isOpen: false,
+    heading: '',
+    subheading: '',
+    content: '',
+  });
+
   const closeModal = () => {
-    setModalData({ isOpen: false, heading: '', subheading: '', content: '' });
+    setModalData({
+      isOpen: false,
+      heading: '',
+      subheading: '',
+      content: '',
+    });
   };
 
+
   return (
-    <div
-      className="min-h-dvh w-full"
-      style={{
-        background: 'radial-gradient(91.13% 65.07% at 100% 0%, #000 0%, #000202 100%)'
-      }}
-    >
-      {/* Header Bar with Logo */}
+    <div className="min-h-dvh w-full bg-black">
+
+      {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm">
-        <div className="container-fluid mx-auto px-4 md:px-6">
-          <div className="flex items-center h-[80px] md:h-auto py-2 md:py-0">
-            <Link to="/" className="flex-shrink-0">
-              <img
-                src={logo}
-                alt="Panorama Logo"
-                className="w-[60px] h-[60px] md:w-[100px] md:h-[100px] object-contain"
-              />
-            </Link>
-          </div>
+        <div className="px-6">
+          <Link to="/">
+            <img src={logo} alt="logo" className="w-20 h-20 object-contain" />
+          </Link>
         </div>
       </header>
 
-      <div className="container-fluid mx-auto px-6 md:px-8 lg:px-16 xl:px-18 pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-20 lg:pb-32">
-        {/* Header Section */}
-        <header className="flex flex-col items-center gap-3 mb-12 md:mb-14 lg:mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-medium text-[#D9D9D9] text-center leading-tight">
+
+      {/* CONTENT */}
+      <div className="px-6 pt-28 pb-20">
+
+        {/* TITLE */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl text-gray-200 font-semibold">
             Custom IT Solutions
           </h1>
-          <p className="text-sm sm:text-base md:text-lg text-[#9C9C9C] text-center font-medium max-w-2xl">
+
+          <p className="text-gray-400 mt-3">
             Some of the decorated Solutions we have delivered to clients
           </p>
-        </header>
+        </div>
 
-        <div className="flex flex-col gap-12 md:gap-12 lg:gap-16">
+
+        {/* PROJECT LIST */}
+        <div className="flex flex-col gap-16">
           {Projects.map((prjDetails, index) => (
-            <Project key={index} details={prjDetails} setModalData={setModalData} />
+            <Project
+              key={index}
+              details={prjDetails}
+              setModalData={setModalData}
+            />
           ))}
         </div>
+
       </div>
+
+
+      {/* MODAL */}
       <Modal
         isOpen={modalData.isOpen}
         onClose={closeModal}
@@ -160,6 +191,7 @@ export default function Solutions() {
         subheading={modalData.subheading}
         content={modalData.content}
       />
+
     </div>
   );
 }
